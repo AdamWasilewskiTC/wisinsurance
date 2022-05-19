@@ -225,6 +225,59 @@ public class dbboot {
             st.execute(createTableSQL);
             st.execute(createTableSQL9);
             st.execute(createTableSQL10);
+
+
+            String insertTable1 = "INSERT INTO address (id, city, street, homeNumber, zipcode) VALUES (1, 'Warszawa', 'Wiśniowa', '56', '02-520');";
+
+            String insertTable2 = "INSERT INTO address (id, city, street, homeNumber, zipcode) VALUES (2, 'Kałuszyn', 'Rodzinna', '25', '05-124');";
+            String insertTable3 = "INSERT INTO businesscustomer (id, nip, regon) VALUES (1, '2137694207', '692137420');";
+            String insertTable4 = "INSERT INTO businesscustomer (id, nip, regon) VALUES (2, '5757854546', '666776875');";;
+            String insertTable5 = "INSERT INTO customer (id, email, number) VALUES (1, 'agent47@gmail.com', '600100100');";
+            String insertTable6 = "INSERT INTO customer (id, email, number) VALUES (2, 'stanislawkloca@wp.pl', '754443735');";
+            String insertTable7 = "INSERT INTO customer (id, email, number) VALUES (3, 'sox@sox.pl', '213742069');";
+            String insertTable8 = "INSERT INTO customer (id, email, number) VALUES (4, 'miski@grozne.eu', '006947420');";
+            String insertTable9 = "INSERT INTO individualcustomer (id, firstname, lastname, pesel) VALUES (1, 'Agent', 'Fortyseven', '68071255437');";
+            String insertTable10 = "INSERT INTO individualcustomer (id, firstname, lastname, pesel) VALUES (2, 'Stanisław', 'Kłoca', '54102566591');";
+            String insertTable11= "INSERT INTO address (id, city, street, homeNumber, zipcode) VALUES (3, 'Bydgoszcz', 'Brzozowa', '31', '85-154');";
+            String insertTable12 = "INSERT INTO address (id, city, street, homeNumber, zipcode) VALUES (4, 'Studzienice', 'Wczasowa', '19', '77-143');";
+            String insertTable13 = "INSERT INTO customeraddress (id, addressid, customerid) VALUES (1, 1, 1);";
+            String insertTable14 = "INSERT INTO customeraddress (id, addressid, customerid) VALUES (2, 2, 2);";
+            String insertTable15 = "INSERT INTO customeraddress (id, addressid, customerid) VALUES (3, 3, 3);";
+            String insertTable16 = "INSERT INTO customeraddress (id, addressid, customerid) VALUES (4, 4, 4);";
+            String insertTable17 = "INSERT INTO policy_type (name) VALUES ('Zdrowotne');";
+            String insertTable18= "INSERT INTO policy_type (name) VALUES ('Na życie');";
+            String insertTable19 = "INSERT INTO policy_type (name) VALUES ('Komunikacujne');";
+            String insertTable20 = "INSERT INTO policy_type (name) VALUES ('Majątkowe');";
+            String insertTable21 = "";
+            String insertTable22= "";
+            String insertTable23 = "";
+            String insertTable24= "";
+
+            st.execute(insertTable1);
+            st.execute(insertTable2);
+            st.execute(insertTable3);
+            st.execute(insertTable4);
+            st.execute(insertTable5);
+            st.execute(insertTable6);
+            st.execute(insertTable7);
+            st.execute(insertTable8);
+            st.execute(insertTable9);
+            st.execute(insertTable10);
+            st.execute(insertTable11);
+            st.execute(insertTable12);
+            st.execute(insertTable13);
+            st.execute(insertTable14);
+            st.execute(insertTable15);
+            st.execute(insertTable16);
+            st.execute(insertTable17);
+            st.execute(insertTable18);
+            st.execute(insertTable19);
+            st.execute(insertTable20);
+            st.execute(insertTable21);
+            st.execute(insertTable22);
+            st.execute(insertTable23);
+            st.execute(insertTable24);
+
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {
